@@ -1,0 +1,14 @@
+DEPENDENCIES
+  csgo
+    path: .
+    metadata: true
+  steamcmd
+    git: https://github.com/josephglanville/cookbook-steamcmd
+    revision: ebd876848d7d2bb5b953ecff0658253008503222
+
+GRAPH
+  csgo (0.1.0)
+    steamcmd (>= 0.0.0)
+  steamcmd (0.1.0)
+    tar (~ 0.6.0)
+  tar (0.6.0)
