@@ -8,7 +8,7 @@ NODE_MEM = 512
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Would be great if there was an official box with both
   # VMWare Fusion and VirtualBox support
-  config.vm.box = 'nitrous-io/trusty64'
+  config.vm.box = 'petejkim/trusty64'
   config.omnibus.chef_version = :latest
 
   config.vm.provider :virtualbox do |vb|
