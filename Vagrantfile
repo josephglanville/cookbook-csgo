@@ -20,7 +20,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.provision 'chef_solo' do |chef|
-    chef.log_level = 'debug'
     chef.add_recipe 'csgo'
   end
 end
